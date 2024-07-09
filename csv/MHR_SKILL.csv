@@ -1,4 +1,4 @@
-#スキル系統,発動スキル,必要ポイント,カテゴリ,効果,系統番号,仮番号,コスト
+skill_name,activated_skill_name,requied_point,category,effect,skill_number,temp_number,cost
 攻撃,攻撃Lv1,1,パラメータ変化,攻撃力+3,1,10,15
 攻撃,攻撃Lv2,2,パラメータ変化,攻撃力+6,1,10,15
 攻撃,攻撃Lv3,3,パラメータ変化,攻撃力+9,1,10,15

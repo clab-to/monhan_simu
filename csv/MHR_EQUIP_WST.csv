@@ -1,4 +1,4 @@
-#名前,"性別(0=両,1=男,2=女)",レア度,スロット1,スロット2,スロット3,入手時期,初期防御力,最終防御力,火耐性,水耐性,雷耐性,氷耐性,龍耐性,スキル系統1,スキル値1,スキル系統2,スキル値2,スキル系統3,スキル値3,スキル系統4,スキル値4,スキル系統5,スキル値5,生産素材1,個数,生産素材2,個数,生産素材3,個数,生産素材4,個数,カスタム強化防御力,カスタム強化素材1,個数1,カスタム強化素材2,個数2,ワンセット防具,仮番号,錬成テーブル
+name,sex,rarity,slot1,slot2,slot3,availability,defense,defense_finally,fire_resistance,water_resistance,thunder_resistance,thunder_resistance,dragon_resistance,skill_name1,skill_point1,skill_name2,skill_point2,skill_name3,skill_point3,skill_name4,skill_point4,skill_name5,skill_point5,forging_materials_name1,forging_materials_count1,forging_materials_name2,forging_materials_count2,forging_materials_name3,forging_materials_count3,forging_materials_name4,forging_materials_count4,custom_defense,custon_materials_name1,custon_materials_count1,custon_materials_name2,custon_materials_count2,oneset,temp_number,qurious_table
 カムラノ装【腰巻】覇,0,4,1,1,0,,30,88,2,0,0,0,0,翔蟲使い,1,見切り,1,,,,,,,カブレライト鉱石,1,イズチの剛毛,1,,,,,,,,,,,10,
 レザーＳベルト,0,4,1,0,0,,30,88,0,0,0,0,0,体力回復量ＵＰ,1,腹減り耐性,2,,,,,,,ファンゴの上毛皮,1,大地の結晶,3,,,,,,,,,,,20,
 チェーンＳベルト,0,4,1,1,0,,32,90,0,0,1,0,0,植生学,1,ガード性能,1,,,,,,,カブレライト鉱石,2,鉄鉱石,3,,,,,,,,,,,30,
