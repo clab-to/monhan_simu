@@ -5,7 +5,7 @@ import pandas as pd
 
 
 class CsvLoader:
-    def load(self, filepath, options):
+    def load(self, filepath, options) -> pd.DataFrame:
         return pd.read_csv(filepath, encoding="utf-8", **options)
 
 
@@ -64,10 +64,10 @@ class HeadDataTable(ArmorDataTable):
         return f"csv{sep}MHR_EQUIP_HEAD.csv"
 
 
-class BodyDataTable(ArmorDataTable):
+class TorsoDataTable(ArmorDataTable):
     def define_filepath(self):
         sep = os.path.sep
-        return f"csv{sep}MHR_EQUIP_BODY.csv"
+        return f"csv{sep}MHR_EQUIP_TORSO.csv"
 
 
 class ArmDataTable(ArmorDataTable):
