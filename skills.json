@@ -1,0 +1,590 @@
+[
+    {
+        "ja": "スタミナ急速回復",
+        "en": "StaminaSurge"
+    },
+    {
+        "ja": "ジャンプ鉄人",
+        "en": "JumpMaster"
+    },
+    {
+        "ja": "ランナー",
+        "en": "MarathonRunner"
+    },
+    {
+        "ja": "翔蟲使い",
+        "en": "WirebugWhisperer"
+    },
+    {
+        "ja": "壁面移動",
+        "en": "WallRunner"
+    },
+    {
+        "ja": "体術",
+        "en": "Constitution"
+    },
+    {
+        "ja": "地質学",
+        "en": "Geologist"
+    },
+    {
+        "ja": "植生学",
+        "en": "Botanist"
+    },
+    {
+        "ja": "滑走強化",
+        "en": "AffinitySliding"
+    },
+    {
+        "ja": "腹減り耐性",
+        "en": "HungerResistance"
+    },
+    {
+        "ja": "剥ぎ取り鉄人",
+        "en": "CarvingPro"
+    },
+    {
+        "ja": "剥ぎ取り名人",
+        "en": "CarvingMaster"
+    },
+    {
+        "ja": "幸運",
+        "en": "GoodLuck"
+    },
+    {
+        "ja": "捕獲名人",
+        "en": "CaptureMaster"
+    },
+    {
+        "ja": "供応",
+        "en": "Spiribird'sCall"
+    },
+    {
+        "ja": "壁面移動【翔】",
+        "en": "WallRunner"
+    },
+    {
+        "ja": "風纏",
+        "en": "WindMantle"
+    },
+    {
+        "ja": "天衣無崩",
+        "en": "Heaven-Sent"
+    },
+    {
+        "ja": "早食い",
+        "en": "SpeedEating"
+    },
+    {
+        "ja": "体力回復量UP",
+        "en": "RecoveryUp"
+    },
+    {
+        "ja": "アイテム使用強化",
+        "en": "ItemProlonger"
+    },
+    {
+        "ja": "満足感",
+        "en": "FreeMeal"
+    },
+    {
+        "ja": "広域化",
+        "en": "WideRange"
+    },
+    {
+        "ja": "ボマー",
+        "en": "Bomberdier"
+    },
+    {
+        "ja": "泡沫の舞",
+        "en": "BubblyDance"
+    },
+    {
+        "ja": "回避性能",
+        "en": "EvadeWindow"
+    },
+    {
+        "ja": "回避距離UP",
+        "en": "EvadeExtender"
+    },
+    {
+        "ja": "飛び込み",
+        "en": "LeapofFaith"
+    },
+    {
+        "ja": "ガード性能",
+        "en": "Guard"
+    },
+    {
+        "ja": "ガード強化",
+        "en": "GuardUp"
+    },
+    {
+        "ja": "精霊の加護",
+        "en": "DivineBlessing"
+    },
+    {
+        "ja": "納刀術",
+        "en": "QuickSheathe"
+    },
+    {
+        "ja": "ひるみ軽減",
+        "en": "FlinchFree"
+    },
+    {
+        "ja": "回復速度",
+        "en": "RecoverySpeed"
+    },
+    {
+        "ja": "血氣",
+        "en": "BloodRite"
+    },
+    {
+        "ja": "合気",
+        "en": "Redirection"
+    },
+    {
+        "ja": "激昂",
+        "en": "Furious"
+    },
+    {
+        "ja": "根性",
+        "en": "Guts"
+    },
+    {
+        "ja": "剛心",
+        "en": "IntrepidHeart"
+    },
+    {
+        "ja": "煽衛",
+        "en": "Embolden"
+    },
+    {
+        "ja": "緩衝",
+        "en": "ShockAbsorber"
+    },
+    {
+        "ja": "耳栓",
+        "en": "Earplugs"
+    },
+    {
+        "ja": "風圧耐性",
+        "en": "Windproof"
+    },
+    {
+        "ja": "耐震",
+        "en": "TremorResistance"
+    },
+    {
+        "ja": "気絶耐性",
+        "en": "StunResistance"
+    },
+    {
+        "ja": "麻痺耐性",
+        "en": "ParalysisResistance"
+    },
+    {
+        "ja": "毒耐性",
+        "en": "PoisonResistance"
+    },
+    {
+        "ja": "睡眠耐性",
+        "en": "SleepResistance"
+    },
+    {
+        "ja": "泥雪耐性",
+        "en": "MuckResistance"
+    },
+    {
+        "ja": "爆破やられ耐性",
+        "en": "BlastResistance"
+    },
+    {
+        "ja": "属性やられ耐性",
+        "en": "BlightResistance"
+    },
+    {
+        "ja": "鬼火纏",
+        "en": "HellfireCloak"
+    },
+    {
+        "ja": "疾之息吹",
+        "en": "QuickBreath"
+    },
+    {
+        "ja": "顕如盤石",
+        "en": "Defiance"
+    },
+    {
+        "ja": "攻撃",
+        "en": "AttackBoost"
+    },
+    {
+        "ja": "防御",
+        "en": "DefenseBoost"
+    },
+    {
+        "ja": "火耐性",
+        "en": "FireResistance"
+    },
+    {
+        "ja": "水耐性",
+        "en": "WaterResistance"
+    },
+    {
+        "ja": "雷耐性",
+        "en": "ThunderResistance"
+    },
+    {
+        "ja": "氷耐性",
+        "en": "IceResistance"
+    },
+    {
+        "ja": "龍耐性",
+        "en": "DragonResistance"
+    },
+    {
+        "ja": "火属性攻撃強化",
+        "en": "FireAttack"
+    },
+    {
+        "ja": "水属性攻撃強化",
+        "en": "WaterAttack"
+    },
+    {
+        "ja": "雷属性攻撃強化",
+        "en": "ThunderAttack"
+    },
+    {
+        "ja": "氷属性攻撃強化",
+        "en": "IceAttack"
+    },
+    {
+        "ja": "龍属性攻撃強化",
+        "en": "DragonAttack"
+    },
+    {
+        "ja": "毒属性強化",
+        "en": "PoisonAttack"
+    },
+    {
+        "ja": "爆破属性強化",
+        "en": "BlastAttack"
+    },
+    {
+        "ja": "睡眠属性強化",
+        "en": "SleepAttack"
+    },
+    {
+        "ja": "麻痺属性強化",
+        "en": "ParalysisAttack"
+    },
+    {
+        "ja": "KO術",
+        "en": "Slugger"
+    },
+    {
+        "ja": "破壊王",
+        "en": "Partbreaker"
+    },
+    {
+        "ja": "スタミナ奪取",
+        "en": "StaminaThief"
+    },
+    {
+        "ja": "乗り名人",
+        "en": "MasterMounter"
+    },
+    {
+        "ja": "陽動",
+        "en": "Diversion"
+    },
+    {
+        "ja": "チャージマスター",
+        "en": "ChargeMaster"
+    },
+    {
+        "ja": "状態異常確定蓄積",
+        "en": "StatusTrigger"
+    },
+    {
+        "ja": "龍気変換",
+        "en": "DragonConversion"
+    },
+    {
+        "ja": "見切り",
+        "en": "CriticalEye"
+    },
+    {
+        "ja": "弱点特効",
+        "en": "WeaknessExploit"
+    },
+    {
+        "ja": "渾身",
+        "en": "MaximumMight"
+    },
+    {
+        "ja": "抜刀術【技】",
+        "en": "CriticalDraw"
+    },
+    {
+        "ja": "抜刀術【力】",
+        "en": "PunishingDraw"
+    },
+    {
+        "ja": "超会心",
+        "en": "CriticalBoost"
+    },
+    {
+        "ja": "会心撃【属性】",
+        "en": "CriticalElement"
+    },
+    {
+        "ja": "弱点特効【属性】",
+        "en": "ElementExploit"
+    },
+    {
+        "ja": "攻めの守勢",
+        "en": "OffensiveGuard"
+    },
+    {
+        "ja": "火事場力",
+        "en": "Heroics"
+    },
+    {
+        "ja": "龍気活性",
+        "en": "Dragonheart"
+    },
+    {
+        "ja": "逆恨み",
+        "en": "Resentment"
+    },
+    {
+        "ja": "逆襲",
+        "en": "Counterstrike"
+    },
+    {
+        "ja": "死中に活",
+        "en": "Resuscitate"
+    },
+    {
+        "ja": "不屈",
+        "en": "Fortify"
+    },
+    {
+        "ja": "フルチャージ",
+        "en": "PeakPerformance"
+    },
+    {
+        "ja": "力の解放",
+        "en": "LatentPower"
+    },
+    {
+        "ja": "挑戦者",
+        "en": "Agitator"
+    },
+    {
+        "ja": "鈍器使い",
+        "en": "Bludgeoner"
+    },
+    {
+        "ja": "集中",
+        "en": "Focus"
+    },
+    {
+        "ja": "強化持続",
+        "en": "PowerProlonger"
+    },
+    {
+        "ja": "砲術",
+        "en": "Artillery"
+    },
+    {
+        "ja": "伏魔響命",
+        "en": "Dereliction"
+    },
+    {
+        "ja": "業鎧【修羅】",
+        "en": "MailofHellfire"
+    },
+    {
+        "ja": "災禍転福",
+        "en": "Coalescence"
+    },
+    {
+        "ja": "狂竜症【蝕】",
+        "en": "Bloodlust"
+    },
+    {
+        "ja": "狂竜症【翔】",
+        "en": "FrenziedBloodlust"
+    },
+    {
+        "ja": "攻勢",
+        "en": "Foray"
+    },
+    {
+        "ja": "研磨術【鋭】",
+        "en": "Grinder"
+    },
+    {
+        "ja": "刃鱗磨き",
+        "en": "BladescaleHone"
+    },
+    {
+        "ja": "連撃",
+        "en": "Burst"
+    },
+    {
+        "ja": "巧撃",
+        "en": "AdrenalineRush"
+    },
+    {
+        "ja": "闇討ち",
+        "en": "SneakAttack"
+    },
+    {
+        "ja": "蓄積時攻撃強化",
+        "en": "BuildupBoost"
+    },
+    {
+        "ja": "奮闘",
+        "en": "Strife"
+    },
+    {
+        "ja": "狂化",
+        "en": "Berserk"
+    },
+    {
+        "ja": "粉塵纏",
+        "en": "PowderMantle"
+    },
+    {
+        "ja": "冰気錬成",
+        "en": "Frostcraft"
+    },
+    {
+        "ja": "血氣覚醒",
+        "en": "BloodAwakening"
+    },
+    {
+        "ja": "激励",
+        "en": "Inspiration"
+    },
+    {
+        "ja": "匠",
+        "en": "Handicraft"
+    },
+    {
+        "ja": "業物",
+        "en": "RazorSharp"
+    },
+    {
+        "ja": "達人芸",
+        "en": "Master'sTouch"
+    },
+    {
+        "ja": "心眼",
+        "en": "Mind'sEye"
+    },
+    {
+        "ja": "砥石使用高速化",
+        "en": "SpeedSharpening"
+    },
+    {
+        "ja": "剛刃研磨",
+        "en": "ProtectivePolish"
+    },
+    {
+        "ja": "高速変形",
+        "en": "RapidMorph"
+    },
+    {
+        "ja": "砲弾装填",
+        "en": "LoadShells"
+    },
+    {
+        "ja": "笛吹き名人",
+        "en": "HornMaestro"
+    },
+    {
+        "ja": "通常弾･連射矢強化",
+        "en": "Normal/RapidUp"
+    },
+    {
+        "ja": "散弾･拡散矢強化",
+        "en": "SpreadUp"
+    },
+    {
+        "ja": "貫通弾･貫通矢強化",
+        "en": "PierceUp"
+    },
+    {
+        "ja": "弾丸節約",
+        "en": "SpareShot"
+    },
+    {
+        "ja": "弾導強化",
+        "en": "Ballistic"
+    },
+    {
+        "ja": "特殊射撃強化",
+        "en": "SpecialAmmoBoost"
+    },
+    {
+        "ja": "反動軽減",
+        "en": "RecoilDown"
+    },
+    {
+        "ja": "装填速度",
+        "en": "ReloadSpeed"
+    },
+    {
+        "ja": "装填拡張",
+        "en": "AmmoUp"
+    },
+    {
+        "ja": "ブレ抑制",
+        "en": "Steadiness"
+    },
+    {
+        "ja": "速射強化",
+        "en": "RapidFireUp"
+    },
+    {
+        "ja": "弓溜め段階解放",
+        "en": "BowChangePuls"
+    },
+    {
+        "ja": "チューンアップ",
+        "en": "Tune-Up"
+    },
+    {
+        "ja": "雷紋の一致",
+        "en": "ThunderAlignment"
+    },
+    {
+        "ja": "風紋の一致",
+        "en": "WindAlignment"
+    },
+    {
+        "ja": "霞皮の恩恵",
+        "en": "ChameleonsBlessing"
+    },
+    {
+        "ja": "鋼殻の恩恵",
+        "en": "KushalaBlessing"
+    },
+    {
+        "ja": "炎鱗の恩恵",
+        "en": "TeostraBlessing"
+    },
+    {
+        "ja": "風雷合一",
+        "en": "Stormsoul"
+    },
+    {
+        "ja": "キノコ大好き",
+        "en": "Mushroomancer"
+    }
+]
