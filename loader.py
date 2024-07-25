@@ -74,7 +74,8 @@ class CsvDataTable(metaclass=ABCMeta):
         for s_name_ja, s_point in zip(skillnames_ja, skill_points):
             if isinstance(s_name_ja, str) and isinstance(s_point, int):
                 s_name_en = self.skillname_ja2en(s_name_ja)
-                row.update({s_name_en: s_point})
+                if s_name_en:
+                    row.update({s_name_en: s_point})
         return row
 
     def skillname_ja2en(self, skillname_ja):
@@ -82,7 +83,7 @@ class CsvDataTable(metaclass=ABCMeta):
             skillname_translate_dict_ja2en = {
                 skill["ja"]: skill["en"] for skill in json.load(f)
             }
-        return skillname_translate_dict_ja2en[skillname_ja]
+        return skillname_translate_dict_ja2en.get(skillname_ja, None)
 
 
 class ArmorDataTable(CsvDataTable):
@@ -195,6 +196,7 @@ class ArmorDataTable(CsvDataTable):
                 skill_point5,
             ]
             row.update(self.convert_skill_format(skillnames_ja, skill_points))
+            rows.append(row)
 
         return rows
 
