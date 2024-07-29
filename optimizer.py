@@ -63,13 +63,18 @@ def optimize(equipments: pd.DataFrame, result_length):
         )
     )
 
-    for i in range(result_length):
+    for _ in range(result_length):
         status = solver.Solve()
 
         if (
             status == pywraplp.Solver.OPTIMAL
             or status == pywraplp.Solver.FEASIBLE
         ):
+            used_indexes = [
+                index
+                for index in range(row_number)
+                if use_flag[index].solution_value() > 0.5
+            ]
             for index in range(row_number):
                 if use_flag[index].solution_value():
                     print(equipments_list["name"][index])
@@ -81,5 +86,16 @@ def optimize(equipments: pd.DataFrame, result_length):
                 )
             )
 
+            solver.Add(
+                solver.Sum(
+                    [
+                        use_flag[index]
+                        for index in range(row_number)
+                        if index in used_indexes
+                    ]
+                )
+                <= len(used_indexes) - 1
+            )
         else:
             print("The problem does not have an optimal solution.")
+            break
