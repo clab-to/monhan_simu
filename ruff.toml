@@ -1,2 +1,5 @@
+target-version = "py312"
+line-length = 79
+
 [lint.isort]
 force-single-line = true

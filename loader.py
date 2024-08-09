@@ -2,8 +2,14 @@ import json
 import os
 from abc import ABCMeta
 from abc import abstractmethod
+from enum import Enum
 
 import pandas as pd
+
+
+class SlotCalculationWay(Enum):
+    ADD = 0
+    SUB = 1
 
 
 class CsvLoader:
@@ -42,14 +48,20 @@ class CsvDataTable(metaclass=ABCMeta):
     def to_optimize_format(self):
         pass
 
-    def convert_slot_level(self, slot1, slot2, slot3):
+    def convert_slot_level_format(
+        self, slots, calculate_way=SlotCalculationWay.ADD
+    ):
         converted_slot_level = {
             "key": ["over-slot1", "over-slot2", "over-slot3", "over-slot4"],
             "value": [0, 0, 0, 0],
         }
-        for slot_level in [slot1, slot2, slot3]:
+        for slot_level in slots:
             for index in range(slot_level):
-                converted_slot_level["value"][index] += 1
+                match calculate_way:
+                    case SlotCalculationWay.ADD:
+                        converted_slot_level["value"][index] += 1
+                    case SlotCalculationWay.SUB:
+                        converted_slot_level["value"][index] -= 1
         return {
             key: value
             for key, value in zip(
@@ -57,11 +69,21 @@ class CsvDataTable(metaclass=ABCMeta):
             )
         }
 
+    def convert_skill_format(self, skillnames_ja, skill_points):
+        row = {}
+        for s_name_ja, s_point in zip(skillnames_ja, skill_points):
+            if isinstance(s_name_ja, str) and isinstance(s_point, int):
+                s_name_en = self.skillname_ja2en(s_name_ja)
+                if s_name_en:
+                    row.update({s_name_en: s_point})
+        return row
+
     def skillname_ja2en(self, skillname_ja):
         with open("skills.json", encoding="utf-8") as f:
-            skills = {skill["ja"]: skill["en"] for skill in json.load(f)}
-        skillname_en = skills[skillname_ja]
-        return skillname_en
+            skillname_translate_dict_ja2en = {
+                skill["ja"]: skill["en"] for skill in json.load(f)
+            }
+        return skillname_translate_dict_ja2en.get(skillname_ja, None)
 
 
 class ArmorDataTable(CsvDataTable):
@@ -158,14 +180,22 @@ class ArmorDataTable(CsvDataTable):
                 "r_ice": resistance_ice,
                 "r_dragon": resistance_dragon,
             }
-            row.update(self.convert_slot_level(slot1, slot2, slot3))
-            for s_name, s_point in zip(
-                [skill_name1, skill_name2, skill_name3, skill_name4, skill_name5],
-                [skill_point1, skill_point2, skill_point3, skill_point4, skill_point5],
-            ):
-                if isinstance(s_name, str) and isinstance(s_point, int):
-                    s_name_en = self.skillname_ja2en(s_name)
-                    row.update({s_name_en: s_point})
+            row.update(self.convert_slot_level_format([slot1, slot2, slot3]))
+            skillnames_ja = [
+                skill_name1,
+                skill_name2,
+                skill_name3,
+                skill_name4,
+                skill_name5,
+            ]
+            skill_points = [
+                skill_point1,
+                skill_point2,
+                skill_point3,
+                skill_point4,
+                skill_point5,
+            ]
+            row.update(self.convert_skill_format(skillnames_ja, skill_points))
             rows.append(row)
 
         return rows
@@ -226,11 +256,11 @@ class DecoDataTable(CsvDataTable):
             "dtype": {
                 "name": "object",
                 "rarity": "object",
-                "slot": "object",
+                "slot": "Int64",
                 "skill_name1": "object",
-                "skill_point1": "object",
+                "skill_point1": "Int64",
                 "skill_name2": "object",
-                "skill_point2": "object",
+                "skill_point2": "Int64",
                 "temp_number": "object",
             }
         }
@@ -240,7 +270,48 @@ class DecoDataTable(CsvDataTable):
         pass
 
     def to_optimize_format(self):
-        pass
+        rows = []
+        for (
+            name,
+            slot,
+            skill_name1,
+            skill_point1,
+            skill_name2,
+            skill_point2,
+        ) in zip(
+            self.dataframe["name"].values.tolist(),
+            self.dataframe["slot"].values.tolist(),
+            self.dataframe["skill_name1"].values.tolist(),
+            self.dataframe["skill_point1"].values.tolist(),
+            self.dataframe["skill_name2"].values.tolist(),
+            self.dataframe["skill_point2"].values.tolist(),
+        ):
+            row = {
+                "name": name,
+                "sex": 0,
+                "head": self.is_head,
+                "torso": self.is_torso,
+                "arm": self.is_arm,
+                "wst": self.is_wst,
+                "leg": self.is_leg,
+                "talisman": self.is_talisman,
+                "def": 0,
+                "r_fire": 0,
+                "r_water": 0,
+                "r_thunder": 0,
+                "r_ice": 0,
+                "r_dragon": 0,
+            }
+            row.update(
+                self.convert_slot_level_format([slot], SlotCalculationWay.SUB)
+            )
+            row.update(
+                self.convert_skill_format(
+                    [skill_name1, skill_name2], [skill_point1, skill_point2]
+                )
+            )
+            rows.append(row)
+        return rows
 
 
 class SkillDataTable(CsvDataTable):
